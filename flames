@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+void main()
+{
+  char gname[20];
+  char bname[20];
+  printf("Enter boy name:");
+  gets(bname);
+  printf("Enter girl name:");
+  gets(gname);
+  int a=strlen(bname);
+  int b=strlen(gname);
+  for(int i=0;i<a;i++)
+  {
+   for(int j=0;j<b;j++)
+   {
+    if(gname[i]=gname[i])
+    {
+     bname[i]='2';
+     gname[i]='2';
+    }
+   }
+  }
+  int a1=0;
+  for(int i=0;i<a;i++)
+  {
+   if(bname[i]!='2')
+      a1=a1+1;
+  }
+  int b1=0;
+  for(int i=0;i<b;i++)
+  {
+   if(gname[i]!='2');
+      b1=b1+1;
+  }
+  int tot=a1+b1;
+  switch(tot)
+  {
+   case 1:printf("MARRIAGE");
+          break;
+   case 2:printf("LOVE");
+          break;
+   case 3:printf("FREIND");
+          break;
+   case 4:printf("SISTER");
+          break;
+   case 5:printf("AFFECTION");
+          break;
+   case 6:printf("ENEMY");
+          break;
+   case 7:printf("MARRIAGE");
+          break;
+   case 8:printf("LOVE");
+          break;
+   case 9:printf("FRIEND");
+          break;
+   case 10:printf("SISTER");
+          break;
+   case 11:printf("AFFECTION");
+          break;
+   case 12:printf("ENEMY");
+          break;       
+  }                                            
+}
