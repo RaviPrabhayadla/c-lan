@@ -1,0 +1,35 @@
+#include<stdio.h>
+void main()
+{
+  int n;
+  struct Person
+  {
+     char Name[20];
+     int Age;
+     int Reg_no;
+     char Grade;
+  };
+  struct Person details[10];
+  printf("How many details:");
+  scanf("%d",&n);
+  for(int i=0;i<n;i++)
+  {
+  printf("Enter the name:");
+  scanf("%s",&details[i].Name);
+  printf("Enter the age:");
+  scanf("%d",&details[i].Age);
+  printf("Enter the reg.no:");
+  scanf("%d",&details[i].Reg_no);
+  printf("Enter the grade:");
+  scanf("%s",&details[i].Grade);
+  printf("\n\n");
+  }
+  for(int i=0;i<n;i++)
+  {
+  printf("Name:%s\n",details[i].Name);
+  printf("Age:%d\n",details[i].Age);
+  printf("Reg_no:%d\n",details[i].Reg_no);
+  printf("Grade:%c\n",details[i].Grade);
+  printf("\n");
+  }
+ }
