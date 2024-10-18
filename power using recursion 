@@ -1,0 +1,22 @@
+#include<stdio.h>
+int power(int m,int n);
+int main()
+{
+   int a,b;
+   printf("Enter the base:");
+   scanf("%d",&a);
+   printf("Enter the exponent:");
+   scanf("%d",&b);
+   printf("The %d power of %d is: %d",b,a,power(a,b));
+   return 0;
+}
+int power(int m,int n)
+{
+  int res=m;
+  if(m==0)
+    return 0;
+  else if(n==0)
+    return 1;
+  else
+    return res=res*power(res,n-1);
+ }
