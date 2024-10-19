@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+struct marks
+    {
+
+    int mark1;
+    int mark2;
+};
+struct details
+{
+    int rollno;
+    char sno[20];
+    struct marks m;
+
+}p[20];
+int main()
+{
+    struct details p[20];
+    for(int i=0;i<2;i++)
+    {
+        printf("enter name");
+        scanf("%s",p[i].sno);
+        printf("enter rollno");
+        scanf("%d",&p[i].rollno);
+        printf("enter mark1");
+        scanf("%d",&p[i].m.mark1);
+        printf("enter mark2");
+        scanf("%d",&p[i].m.mark2);
+    }
+}
